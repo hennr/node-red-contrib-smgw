@@ -6,7 +6,7 @@ A Node-RED node to read data from Smart Meter Gateways (SMGWs) via the HAN inter
 
 ## Supported Smart Meter Gateways
 Due to a non-standardised interface over the HAN connection, adaptation is necessary for each gateway manufacturer. Currently only the following gateways are supported:
-- PPC Smart Meter Gateway (tested with FW 31416-31435)
+- PPC Smart Meter Gateway (tested with FW 31416-31435 and 32474-32475)
 
 ## Getting started
 Use 'Manage Palette' in the Node RED Webinterface or install via cli: 
@@ -21,7 +21,11 @@ $ npm install node-red-contrib-smgw
 - PPC Smart Meter Gateway with default ip 192.168.1.200
 - Password editable on https://medaco.westnetz.de/web2_wn/sethanpassword
 - Username is the last part of the HAN-Profile field (e.g. 921908|ECPR0000064191| **6149436**). In this example 6149436 is the username.
+- HAN Webinterface on https://192.168.1.200/cgi-bin/hanservice.cgi
 
+**E-DIS:**
+- PPC Smart Meter Gateway with default ip 192.168.1.200
+- HAN credentials (username and password) can be found in the customer portal https://www.e-dis-netz.de/
 - HAN Webinterface on https://192.168.1.200/cgi-bin/hanservice.cgi
 
 
